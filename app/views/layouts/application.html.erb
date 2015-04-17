@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Noh yong goo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  
+<header>
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="/img/cafe.jpg">
+      <h1>Noh yong goo</h1>
+    </a>
+    <ul class="nav">
+      <li>
+        <a href="/">HOME</a>
+      </li>
+      <li>
+        <a href="#about">ABOUT ME</a>
+      </li>
+      <li>
+        <a href="#favorite">INTEREST</a>
+      </li>
+      <li>
+        <a href="#contact">CONTACT</a>
+      </li>
+      <li>
+        <a href="#idea">IDEA</a>
+      </li>
+    </ul>
+  </div>
+</header>
+  
+<%= yield %>
+
+<footer>
+  <ul class="sns">
+    <a href="http://www.facebook.com/shdydrn">
+      <li class="facebook">
+        <img src="/img/sns-facebook.png">
+      </li>
+    </a>
+    <a href="https://instagram.com/">
+      <li class="instargram">
+        <img src="/img/sns-instargram.png">
+      </li>
+    </a>
+    <a href="https://www.pinterest.com/">
+      <li class="pinterest">
+        <img src="/img/sns-pinterest.png">
+      </li>
+    </a>
+    <a href="https://www.twitter.com/">
+      <li class="twitter">
+        <img src="/img/sns-twitter.png">
+      </li>
+    </a>
+    <a href="http://www.youtube.com">
+      <li class="youtube">
+        <img src="/img/sns-youtube.png">
+      </li>
+    </a>
+  </ul>
+  <h3>Copyright &copy; 2015 TOYCODE</h3>
+</footer>
+  
+</body>
+</html>

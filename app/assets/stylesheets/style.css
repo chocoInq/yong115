@@ -1,0 +1,234 @@
+
+#top {
+  padding: 50px 0;
+  background: url('/img/programming.png');
+  background-size: cover;
+  background-position: center center;
+  height: 470px;
+  margin: 0 auto;
+}
+
+#about {
+  overflow: hidden;
+}
+.about-img {
+  float: left;
+  width: 50%;
+  height: 600px;
+  background: url('/img/shore2.jpg');
+  background-size: cover;
+  background-position: center left;
+}
+.about-contents {
+  float: right;
+  width: 50%;
+}
+.about-contents .inner {
+  padding: 50px;
+}
+.about-contents .sub-title {
+  margin: 25px 0;
+}
+.about-contents p {
+  font-family: 'Nanum Gothic Coding', serif;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  #about > div {
+    float: none;
+    width: 100%;
+  }
+}
+
+#favorite {
+  padding: 50px 0;
+  background-color: #eee;
+  text-align: center;
+}
+#favorite .inner {
+  margin: 0 auto;
+}
+#favorite .sub-title {
+  margin-bottom: 25px;
+  color: #666;
+}
+.favorite-contents {
+  display: inline-block;
+  width: 200px;
+  margin: 25px;
+}
+.favorite-contents .img-hover {
+  position: relative;
+}
+.favorite-contents .img-hover img {
+  width: 180px;
+  height: 180px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  filter: grayscale(70%);
+  -webkit-filter: grayscale(70%);
+  transition: all 0.2s ease-in-out;
+}
+
+.favorite-contents .img-hover:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+.favorite-contents h3 {
+  margin-top: 10px;
+  color: #666;
+}
+@media (max-width: 768px) {
+  #favorite .inner {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #favorite .inner {
+    width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  #favorite .inner {
+    width: 1200px;
+  }
+}
+
+#contact {
+  padding: 50px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+#contact .inner {
+  width: 768px;
+  margin: 0 auto;
+}
+#contact .title {
+  margin-bottom: 25px;
+}
+#contact .input-form {
+  overflow: hidden;
+}
+#contact .input-form input {
+  height: 50px;
+  padding: 0 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+#contact .input-form input:focus {
+  border: 2px solid #7A95AB;
+}
+#contact .input-form input[name=name] {
+  float: left;
+  width: 25%;
+}
+#contact .input-form input[name=message] {
+  float: right;
+  width: 75%;
+}
+#contact .input-form button {
+  float: right;
+  height: 40px;
+  margin-top: 10px;
+  padding: 0 20px;
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  outline: none;
+  cursor: pointer;
+}
+#contact .input-form button:hover {
+  background-color: #155c9b;
+}
+#contact .comment {
+  position: relative;
+  margin: 50px 0;
+  padding-left: 80px;
+  text-align: left;
+}
+#contact .comment img {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#contact .comment h1 span {
+  color: #999;
+  font-size: 0.5em;
+  font-weight: normal;
+}
+#contact .comment p {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  #contact .inner {
+    width: 95%;
+  }
+}
+
+#idea {
+  text-align: center;
+  margin: 50px 0;
+}
+#idea form {
+  margin-top: 20px;
+}
+#idea input {
+  height: 40px;
+  padding: 0 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+#idea input:focus {
+  border: 2px solid #7A95AB;
+}
+  
+#idea button {
+  height: 40px;
+  padding: 0 20px;
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 3px;
+  outline: none;
+  cursor: pointer;
+}
+#idea button:hover {
+  background-color: #155c9b;
+}
+
+.top-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+  border-radius: 50%;
+  text-align: center;
+  opacity: 0.8;
+  z-index: 10;
+}
+.top-btn:hover {
+  background-color: #155c9b;
+  opacity: 1;
+}
+.top-btn img {
+  margin: 22px 0;
+}

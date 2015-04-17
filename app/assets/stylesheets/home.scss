@@ -1,0 +1,147 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Titillium Web';
+  padding-top: 80px;
+}
+
+.title {
+  font-size: 50px;
+}
+.sub-title {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+header .container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+header .logo {
+  float: left;
+}
+header .logo img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+header .logo h1 {
+  float: left;
+  color: #155c9b;
+}
+header .logo h1:hover {
+  color: blue;
+}
+header .nav {
+  float: right;
+  list-style: none;
+}
+header .nav li {
+  float: left;
+  padding: 0 10px;
+}
+header .nav li a {
+  color: #155c9b;
+  font-size: 18px;
+  text-decoration: none;
+}
+header .nav li a:hover {
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header .logo {
+    display: inline-block;
+    float: none;
+  }
+  header .nav {
+    display: none;
+  }
+}
+
+
+
+footer {
+  font-family: 'Titillium Web';
+  padding: 25px 0;
+  background-color: #eee;
+  color: #aaa;
+  text-align: center;
+}
+footer .sns {
+  display: inline-block;
+  list-style: none;
+}
+footer .sns li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #aaa;
+  border-radius: 50%;
+}
+
+footer .sns .facebook:hover {
+  background-color: #3b5998;
+}
+footer .sns .instargram:hover {
+  background-color: #bc947a;
+}
+footer .sns .pinterest:hover {
+  background-color: #cc2127;
+}
+footer .sns .twitter:hover {
+  background-color: #5eaade;
+}
+footer .sns .youtube:hover {
+  background-color: #e12b28;
+}
+footer h3 {
+  font-weight: normal;
+}
+
+#idea-main {
+ padding: 50px 0;
+ text-align: center;
+}
+#idea-inner {
+ display: inline-block;
+ width: 600px;
+}
+#idea-inner h1{
+color: #155c9b;
+}
+#idea-inner li{
+ text-align: left;
+ margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  #idea-inner {
+    width: 95%;
+  }
+}

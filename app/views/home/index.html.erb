@@ -1,0 +1,111 @@
+
+<div id="top">
+</div>
+<div id="about">
+  <div class="about-img">
+  </div>
+  <div class="about-contents">
+    <div class="inner">
+      <h1 class="title">Noh yong goo</h1>
+      <h3 class="sub-title">The real effort never betrays me.</h3>
+      <p>
+        　안녕하세요 반갑습니다!
+        현재(2015) 서울대학교 수리과학부에 교류학생으로 재학중인 노용구입니다.
+        저는 본래 수학이 전공이었으나, 최근 우연찮게 프로그래밍을 접한 후로 프로그래밍에 빠지고 말았습니다.
+        프로그래밍을 배우는 중이고, 아직 많이 부족합니다.
+        아직은 많이 부족하지만 프로그래밍을 더 많이 배우고 더 많이 접해서 결국 프로그래머로서 스타트업을
+        이루어내는 것이 제 목표입니다. 지켜봐주십시오!!
+      </p>
+    </div>
+  </div>
+</div>
+<div id="favorite">
+  <div class="inner">
+    <h1 class="title">Field of interest</h1>
+    <h3 class="sub-title">I'm interested in..</h3>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/math.jpg">
+      </div>
+      <h3>MATHEMATICS</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/astro.jpg">
+      </div>
+      <h3>ASTRONOMY</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/creative.jpg">
+      </div>
+      <h3>CREATIVE</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/fa/06.jpg">
+      </div>
+      <h3>IT</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/programming.jpg">
+      </div>
+      <h3>PROGRAMMING</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/game.jpg">
+      </div>
+      <h3>GAME</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/alcohol.jpg">
+      </div>
+      <h3>ALCOHOL</h3>
+    </div>
+    <div class="favorite-contents">
+      <div class="img-hover">
+        <img src="/img/music.jpg">
+      </div>
+      <h3>MUSIC</h3>
+    </div>
+  </div>
+</div>
+<div id="contact">
+  <div class="inner">
+    <h1 class="title">GET IN TOUCH!</h1>
+    <div class="input-form">
+      <%= form_tag("/write", method: "post") do %>
+      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="message" placeholder="Message">
+      <button>SEND MESSAGE</button>
+      <% end %>
+    </div>
+    <% @comments.each do |comment| %>
+    <div class="comment">
+      <img src="/img/guest.png">
+      <h1>
+        <%= comment.name %>
+        <span><%= comment.created_at.localtime.strftime("%I:%M %p - %B %e, %Y") %></span>
+      </h1>
+      <p>
+        <%= comment.content %>
+      </p>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+<div id="idea">
+  <h1 class="title">My idea</h1>
+  <form action="/idea" method="post">
+    <input type="password" name="password" placeholder="<%= @password %>">
+    <button>LOGIN</button>
+  </form>
+</div>
+
+<a href="/" class="top-btn">
+  <img src="/img/top.png">
+</a>
